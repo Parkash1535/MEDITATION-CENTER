@@ -1,0 +1,806 @@
+/* Common CSs */
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container {
+    max-width: 1520px;
+    width: 100%;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.d_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Headings */
+
+.heading {
+    padding: 24px 20px;
+    font-family: 'Marcellus', serif;
+    font-size: 24px;
+    line-height: 133%;
+}
+
+.subHeading {}
+
+
+/* Header start */
+.top_head {
+    background-color: #eac07f57;
+}
+
+.header {
+    padding-top: 30px;
+}
+
+.header_logo {
+    max-width: 241px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo_text {
+    font-size: 24px;
+    font-family: 'Marcellus', serif;
+    line-height: 133%;
+    color: #B67352;
+}
+
+.sidebar {
+    background-color: #eee;
+    display: none;
+    height: 100%;
+    width: 100%;
+    max-width: 230px;
+    position: fixed;
+    top: 145px;
+    right: -100%;
+    z-index: 1;
+    transition: 0.45 xuuxuus;
+    overflow: auto;
+}
+
+.menu_li {
+    padding: 30px;
+    cursor: pointer;
+}
+
+.menu_li:hover {
+    background-color: #eac07f57;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar ul {
+    gap: 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 175%;
+    letter-spacing: 0.15px;
+    align-items: center;
+}
+
+.hame {
+    display: none;
+}
+
+.navbar_link {
+    position: relative;
+}
+
+.navbar_link::after {
+    content: "";
+    background-color: black;
+    height: 1px;
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar_link:hover::after {
+    width: 100%;
+    cursor: pointer;
+}
+
+.navbar_contact {
+    background-color: #EAC07F;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.46px;
+    display: flex;
+    padding: 12px 30px 12px 27px;
+    gap: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar_contact:hover {
+    background: #9b7e53b5;
+}
+
+.contact {
+    color: white;
+}
+
+
+/* main */
+/* Banner Start */
+
+
+.banner {
+    padding: 110px 0 50px 0;
+
+}
+    
+.circle {
+    clip-path: circle(50% at -10% 30%);
+    background-color: rgb(218, 199, 146);
+    position: absolute;
+    width: 968px;
+    height: 968px;
+    opacity: .2;
+    z-index: -1;
+}
+
+.banner_offer {
+    position: relative;
+}
+
+.banner_offer_text {
+    font-family: 'Marcellus', serif;
+    line-height: 160%;
+    letter-spacing: 0.15px;
+    position: absolute;
+    top: 70px;
+    left: 33px;
+}
+
+.banner_disacount {
+    font-size: 26px;
+    padding-left: 10px;
+}
+
+.banner_heading {
+    font-size: 90px;
+    line-height: 160%;
+    letter-spacing: 0.15px;
+    font-family: 'Marcellus', serif;
+    margin-bottom: 30px;
+}
+
+.banner_para {
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.15px;
+    font-family: 'Marcellus', serif;
+    margin-bottom: 20px;
+}
+
+.banner_para_last {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+    margin-bottom: 82px;
+    padding-left: 20px;
+}
+
+.button {
+    background-color: #FE0150;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 26px;
+    letter-spacing: 0.46px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    width: 3px;
+    height: 80px;
+    background-color: #EAC07F;
+    position: absolute;
+
+}
+
+.banner_img {
+    padding-top: 166px;
+    position: relative;
+}
+
+.banner_img_ellipse {
+    position: absolute;
+    top: 227px;
+    right: 80px;
+    z-index: -1;
+}
+
+.flower-img1 {
+    position: absolute;
+    bottom: 0px;
+    left: -210px;
+    mix-blend-mode: multiply;
+}
+
+/* Retreat Experience */
+.main_experience {
+    background-color: #FCFAF7;
+    position: relative;
+}
+
+.experience {
+    gap: 66px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.heading {
+    font-family: 'Marcellus', serif;
+    font-size: 48px;
+    line-height: 116%;
+    text-align: center;
+    padding: 100px 0px 50px 0;
+}
+
+.flower_img2 {
+    position: absolute;
+    right: 35px;
+    top: 69px;
+    mix-blend-mode: multiply;
+}
+
+.leaves1 {
+    position: absolute;
+    bottom: 16px;
+    left: 370px;
+    z-index: 0;
+    mix-blend-mode: multiply;
+}
+
+.leaves2 {
+    position: absolute;
+    bottom: 40px;
+    right: 560px;
+}
+
+.natural_madican {
+    z-index: 1;
+}
+
+.medican_text {
+    margin-top: 35px;
+}
+
+.medican_text p {
+    font-family: 'DM Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.603);
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 30px;
+    padding-right: 105px;
+}
+
+.experience_button {
+    border: none;
+    font-size: 18px;
+    background: none;
+    margin-top: 130px;
+}
+
+.flower_img3 {
+    position: absolute;
+    top: 0px;
+    left: -193px;
+    mix-blend-mode: multiply;
+}
+
+/* video */
+.video video {
+    border-radius: 15px;
+    width: 100%;
+    max-height: 529px;
+    height: 100%;
+    margin: 50px 0 100px 0;
+    object-fit: cover;
+}
+
+/* Testimony */
+.testimony_section {
+    background-color: #E1DED6;
+    position: relative;
+}
+
+.flower_img4 {
+    position: absolute;
+    top: 60px;
+    left: -25px;
+    z-index: 0;
+    mix-blend-mode: multiply;
+}
+
+.testimony_text {
+    font-family: 'Marcellus', serif;
+    font-size: 48px;
+    line-height: 116%;
+    padding: 100px 0px 50px;
+}
+
+.testimony {
+    gap: 15px;
+    padding-bottom: 120px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimony_photo {
+    background: white;
+    border-radius: 15px;
+    z-index: 1;
+    transition: 0.5s;
+    position: relative;
+}
+
+.test_photo1:hover {
+    transform: translateY(-25px);
+    background-color: #EAC07F;
+}
+
+.testimony_photo_text {
+    padding: 24px 20px;
+    font-family: 'Marcellus', serif;
+    font-size: 24px;
+    line-height: 133%;
+
+}
+
+.flower_img5 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    mix-blend-mode: multiply;
+    z-index: 1;
+}
+
+/* Highly Experienced */
+
+
+.amanda::after {
+    content: "";
+    border-radius: 15px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transition: 1s;
+
+}
+
+.amanda:hover::after {
+    opacity: 1;
+    background: linear-gradient(to bottom, rgba(232, 211, 127, 0.536), rgba(255, 253, 253, 0));
+
+}
+
+.text1 {
+    text-align: center;
+    padding: 18px 0 10px 0;
+}
+
+.text_para {
+    color: rgba(0, 0, 0, 0.6) !important;
+    text-align: center;
+    font-size: 18px;
+    line-height: 150%;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.15px;
+}
+
+/* Retreat Itinerary */
+.retreat {
+    gap: 30px;
+    opacity: 1;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    line-height: 150%;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.15px;
+    padding: 50px 0px 70px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.button2 {
+    background-color: rgba(38, 38, 38, 1);
+    color: white;
+    margin-top: 15px;
+}
+
+.button2:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.house_photo {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.photo {
+    position: relative;
+
+}
+
+.photo_text {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c73;
+    border-radius: 15px;
+}
+
+.photo_head {
+    border-radius: 10px;
+    font-family: 'Marcellus';
+    font-size: 24px;
+    line-height: 133.4%;
+    padding: 15px 30px;
+    background-color: rgba(249, 234, 189, 1);
+}
+
+/* The Psychedelic Origin  */
+.psychedelic_origin {
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.origin_video video {
+    max-width: 626px;
+    width: 100%;
+    height: 447px;
+
+}
+
+.psychedelic_origin_text {
+    max-width: 734px;
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(29, 29, 31, 1);
+    color: white;
+    padding-bottom: 30px;
+}
+
+.footer_box {
+    padding-top: 100px;
+}
+
+
+.footer_logo_text {
+    color: white;
+}
+
+.footer_contect {
+    padding-top: 50px;
+    max-width: 313px;
+    width: 100%;
+
+}
+
+
+.footer_icon {
+    display: flex;
+    opacity: 1;
+    align-items: center;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.17px;
+
+}
+
+.footer_icon:hover {
+    color: #6d6dfb;
+}
+
+.footer_icon_text {
+    position: relative;
+}
+
+.footer_icon_text::after {
+    content: "";
+
+    background-color: #6d6dfb;
+    height: 1px;
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    transition: 0.5s ease-out;
+}
+
+.footer_icon_text:hover::after {
+    width: 100%;
+}
+
+.footer_icon_line {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.join_the_movement {
+    max-width: 311px;
+    width: 100%;
+}
+
+.join_the_movement_heading {
+    padding-bottom: 50px;
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.15px;
+}
+
+.join_the_movement_para {
+    font-family: 'DM Sans';
+    line-height: 143%;
+    letter-spacing: 0.17px;
+}
+
+.footer_email {
+    margin-top: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    color: white;
+    background-color: rgba(29, 29, 31, 1);
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'DM Sans';
+    letter-spacing: .15px;
+    transition: .5s;
+}
+
+.footer_email:hover {
+    border: 1px solid black;
+}
+
+.join_button {
+    font-family: 'DM Sans';
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.46px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(234, 192, 127, 1);
+    color: white;
+    margin-top: 50px;
+    float: right;
+}
+
+.join_button:hover {
+    background: #9b7e53b5;
+}
+
+.footer_line {
+    border-bottom: 1px solid rgba(66, 66, 66, 1);
+    padding-bottom: 20px
+}
+
+.copy_right {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.17px;
+
+    padding-top: 20px;
+}
+
+.footer_links ul {
+    gap: 40px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.footer_link:after {
+    background-color: white !important;
+}
+
+.footer_link a {
+    color: white;
+    transition: 2s;
+}
+
+.footer_link a:hover {
+    color: #6d6dfb;
+}
+
+.footer_vartical_line {
+    width: 2px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+@media (max-width:1200px) {
+    .hame {
+        display: block;
+        order: 1;
+    }
+
+    .navbar_contact {
+        order: -1;
+    }
+
+    .navbar_link {
+        display: none;
+    }
+
+    .header_logo {
+        margin: auto;
+    }
+
+    .banner_section {
+        display: block;
+    }
+
+    .banner_text {
+        text-align: center;
+    }
+
+    .banner_offer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .banner_offer_text {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .banner_img img {
+        width: 100%;
+    }
+
+    .retreat {
+        display: block;
+    }
+
+    .experience {
+        flex-direction: column-reverse;
+
+    }
+
+    .button {
+        margin: auto;
+    }
+
+    .medican {
+        flex-direction: column;
+    }
+
+    .natural_madican {
+        margin: auto;
+    }
+
+    .house_photo {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .psychedelic_origin {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flower {
+        display: none;
+    }
+
+    .house_photo {
+        padding-top: 20px;
+    }
+
+    .sidebar {
+        display: block;
+    }
+
+    .sidebar.active {
+        right: 0;
+    }
+}
+
+@media (max-width:768px) {
+    .footer_box {
+        flex-direction: column;
+    }
+
+    .footer_logo {
+        margin: 0;
+    }
+
+    .join_button {
+        width: 100%;
+    }
+
+    .retreat {
+        grid-column: span 2;
+    }
+
+
+}
+
+@media (max-width:425px) {
+    .copy_right {
+        flex-direction: column;
+    }
+
+    .footer_link {
+        padding-top: 20px;
+        font-size: 10px;
+        gap: 16px;
+    }
+}
